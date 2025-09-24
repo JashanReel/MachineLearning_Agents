@@ -1,0 +1,79 @@
+python pacman.py -p ReflexAgent -l _classic
+
+1. ReflexAgent & ManhattanDistance & betterEvaluationFunction & minimaxClassic
+- 58% : 1159/2000
+
+2. ReflexAgent & ManhattanDistance & betterEvaluationFunction & openClassic
+- 99% : 1995/2000
+
+3. ReflexAgent & ManhattanDistance & betterEvaluationFunction & smallClassic
+- 74% : 1484/2000
+
+4. ReflexAgent & ManhattanDistance & betterEvaluationFunction & mediumClassic
+- 73% : 1462/2000
+----------------------------------------------------------------------------------
+1. ReflexAgent & ManhattanDistance & evaluationStandard & minimaxClassic
+- 56% : 1124/2000
+
+2. ReflexAgent & ManhattanDistance & evaluationStandard & openClassic
+- 96% : 1920/2000
+
+3. ReflexAgent & ManhattanDistance & evaluationStandard & smallClassic
+- 70% : 1409/2000
+
+4. ReflexAgent & ManhattanDistance & evaluationStandard & mediumClassic
+- 69% : 1384/2000
+==================================================================================
+python pacman.py -p _Agent -l minimaxClassic -a depth=
+
+1. MinimaxAgent & minimaxClassic & betterEvaluationFunction & ManhattanDistance
+- depth 2 : 73% : 1462/2000
+- depth 3 : 65% : 1289/2000
+- depth 4 : 76% : 1523/2000
+
+2. AlphaBetaAgent & minimaxClassic & betterEvaluationFunction & ManhattanDistance
+- depth 2 : 74% : 1475/2000
+- depth 3 : 65% : 1292/2000
+- depth 4 : 77% : 1534/2000
+
+3. ExpectimaxAgent & minimaxClassic & betterEvaluationFunction & ManhattanDistance
+- depth 2 : 84% : 1673/2000
+- depth 3 : 80% : 1593/2000
+- depth 4 : 84% : 1674/2000
+----------------------------------------------------------------------------------
+1. MinimaxAgent & minimaxClassic & evaluationStandard & ManhattanDistance
+- depth 2 : 44% : 885/2000
+- depth 3 : 50% : 994/2000
+- depth 4 : 64% : 1281/2000
+
+2. AlphaBetaAgent & minimaxClassic & evaluationStandard & ManhattanDistance
+- depth 2 : 43% : 869/2000
+- depth 3 : 50% : 995/2000
+- depth 4 : 65% : 1300/2000
+
+3. ExpectimaxAgent & minimaxClassic & evaluationStandard & ManhattanDistance
+- depth 2 : 62% : 1247/2000
+- depth 3 : 67% : 1348/2000
+- depth 4 : 78% : 1564/2000
+==================================================================================
+python pacman.py -p _Agent -l smallClassic -a depth=
+
+1. AlphaBetaAgent & smallClassic & betterEvaluationFunction & ManhattanDistance
+- depth 2 : 84% : 842/1000
+- depth 3 : 89% : 894/1000
+- depth 4 : 96% : 96/100
+
+2. ExpectimaxAgent & smallClassic & betterEvaluationFunction& ManhattanDistance
+- depth 2 : 89% : 445/500
+- depth 3 : 93% : 93/100
+- depth 4 : 98% : 98/100
+----------------------------------------------------------------------------------
+3. AlphaBetaAgent & smallClassic & evaluationStandard & ManhattanDistance
+- depth 2 : 4% : 4/100
+- depth 3 : 14% : 14/100
+- depth 4 : 20% : 2/10
+
+4. ExpectimaxAgent & smallClassic & evaluationStandard & ManhattanDistance
+- depth 2 : 4% : 4/100
+- depth 3 : 35% : 35/100
+- depth 4 : 40% : 4/10
